@@ -19,3 +19,49 @@ ul {
     list-style: none;
   }
 }
+
+/*main*/
+.map {
+  position: relative;
+  min-height: 100%;
+  font-size: 1.6rem;
+  background: url("../assets/images/bg-map.png") center / cover no-repeat;
+}
+
+.button-point {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 11px 15px;
+  border: 1px solid #3877ee;
+  border-radius: 40px;
+  color: #ffffff;
+  background: #3877ee;
+}
+
+.point-title {
+  display: none;
+  margin: 0 0 0 5px;
+  /*font-family: 'Arial';*/
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.button-point_color {
+  border: 1px solid #6abf4b;
+  background: #6abf4b;
+}
+
+/*open button*/
+.point_open {
+  display: block;
+}
+
+/*buttons*/
+.bridge {
+  position: absolute;
+  left: 20%;
+  top: 66%;
+}
