@@ -25,7 +25,7 @@ ul {
   position: relative;
   min-height: 100%;
   font-size: 1.6rem;
-  background: url("../assets/images/bg-map.png") center / cover no-repeat;
+  background: url(assets/images/bg-map..png) center / cover no-repeat;
 }
 
 .button-point {
@@ -63,3 +63,4 @@ ul {
 .point_open {
   display: block;
 }
+
