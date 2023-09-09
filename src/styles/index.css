@@ -29,7 +29,7 @@ ul {
 }
 
 .button-point {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
   padding: 11px 15px;
@@ -37,15 +37,20 @@ ul {
   border-radius: 40px;
   color: #ffffff;
   background: #3877ee;
+  opacity: 0.8;
+}
+
+.point-icon {
+  font-size: 16px;
 }
 
 .point-title {
   display: none;
   margin: 0 0 0 5px;
-  /*font-family: 'Arial';*/
+  font-family: "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: normal;
 }
 
@@ -57,11 +62,4 @@ ul {
 /*open button*/
 .point_open {
   display: block;
-}
-
-/*buttons*/
-.bridge {
-  position: absolute;
-  left: 20%;
-  top: 66%;
 }

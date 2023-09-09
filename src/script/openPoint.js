@@ -2,9 +2,9 @@ import {
   ACTIVE_CLASS_BUTTON, BUTTON_ICON_CONTENT, INITIAL_CLASS_BUTTON, INNER_BUTTON_CLASS,
 } from './dataButtons';
 
-/* eslint-disable import/prefer-default-export */
 function changeIconButton(element) {
   const iconElement = element;
+
   if (iconElement.textContent === BUTTON_ICON_CONTENT.close) {
     iconElement.textContent = BUTTON_ICON_CONTENT.open;
   } else {
@@ -22,6 +22,7 @@ function removeTitlePointButton(element) {
 
 function removeTitlePointButtonActive() {
   const openPointButtons = document.querySelectorAll(`.${ACTIVE_CLASS_BUTTON.open}`);
+
   if (openPointButtons.length) {
     openPointButtons.forEach((point) => {
       const iconElement = point.previousElementSibling;
@@ -31,7 +32,7 @@ function removeTitlePointButtonActive() {
   }
 }
 
-export function buttonPointHandler() {
+export default function buttonPointHandler() {
   const map = document.querySelector('.map');
 
   map.addEventListener('click', (e) => {
