@@ -11,10 +11,10 @@ export function createSpan(parent, nameClass, text) {
 
 export function createPositionPoint(element, positionElement) {
   const point = element;
-  const widthMapDefault = '1920';
-  const heigthMapDefault = '1080';
-  const coordinateX = Math.round((positionElement.left * 100) / widthMapDefault);
-  const coordinateY = Math.round((positionElement.top * 100) / heigthMapDefault);
+  const WIDTH_MAP_DEFAULT = '1920';
+  const HEIGHT_MAP_DEFAULT = '1080';
+  const coordinateX = Math.round((positionElement.left * 100) / WIDTH_MAP_DEFAULT);
+  const coordinateY = Math.round((positionElement.top * 100) / HEIGHT_MAP_DEFAULT);
   point.style.left = `${coordinateX}%`;
   point.style.top = `${coordinateY}%`;
 }
